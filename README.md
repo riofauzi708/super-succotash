@@ -1,3 +1,51 @@
+# Manajemen Pegawai
+
+Aplikasi **Manajemen Pegawai** adalah sistem berbasis web yang memungkinkan pengguna untuk dengan mudah mencari, melihat, dan menambah data pegawai. Aplikasi ini menyediakan antarmuka yang ramah pengguna, baik untuk desktop maupun mobile, serta berbagai fitur seperti filter pencarian, pengurutan data, dan pengelolaan data pegawai yang intuitif. 
+
+## Fitur Utama
+
+- **Pencarian Data Pegawai**: Mencari pegawai dengan mudah menggunakan fitur pencarian di berbagai kolom seperti nama, email, posisi, dan lainnya.
+- **Pengurutan & Penyaringan**: Menyortir dan memfilter data pegawai berdasarkan kolom yang diinginkan (misalnya, tanggal perekrutan atau tanggal pembuatan).
+- **Manajemen Pegawai**: Menambah, mengedit, dan menghapus data pegawai dengan antarmuka yang sederhana dan mudah digunakan.
+- **Responsif**: Aplikasi dirancang responsif untuk memberikan pengalaman yang nyaman di perangkat desktop maupun mobile.
+- **Validator Input**: Menggunakan jQuery validator untuk memastikan data yang dimasukkan valid.
+- **Pengelolaan File**: Menggunakan **Bootstrap FileInput** dan **Dropzone** untuk unggah gambar profil pegawai yang nyaman dan mudah digunakan.
+- **Tabel Data Interaktif**: Menampilkan daftar pegawai dengan kemampuan sortir dan pencarian menggunakan **DataTables**.
+- **API untuk List Pegawai**: Menyediakan akses API untuk mengelola data pegawai.
+- **Data Dummy**: Menyediakan fitur seeder untuk memasukkan data dummy ke dalam database.
+
+## Teknologi yang Digunakan
+
+- **Backend**: PHP, Laravel
+- **Frontend**: HTML, CSS, Bootstrap, jQuery, Select2, Toastr
+- **Database**: SQLite
+- **Autentikasi**: Laravel Auth
+- **File Upload**: Bootstrap Fileinput, Dropzone
+- **Pencarian & Pengurutan**: DataTables
+- **Validator Input**: jQuery Validator
+
+## Instalasi
+
+Ikuti langkah-langkah di bawah ini untuk menjalankan proyek ini secara lokal:
+
+### 1. Clone Repository
+
+Clone repositori ini ke dalam mesin lokal Anda menggunakan Git.
+
+```bash
+git clone https://github.com/username/repository-name.git
+cd repository-name
+```
+
+- **Konfigurasi Database**: Mengubah database ke SQLite dalam file `.env`:
+    - `DB_CONNECTION=sqlite`
+    - `DB_DATABASE=database/database.sqlite`
+    - Jika file `database.sqlite` belum ada, Anda perlu membuatnya di dalam folder `database/`.
+- **Instalasi**: Penjelasan tentang cara mengatur SQLite sebagai database dan cara memigrasi tabel.
+
+**SQLite** sebagai database, yang lebih ringan dan mudah untuk pengembangan lokal tanpa perlu setup server database seperti MySQL atau PostgreSQL.
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
